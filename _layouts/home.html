@@ -26,62 +26,42 @@ layout: default
     </div>
 
 
-    <div class="block">
-        {% if site.json.work %}
-        {% if site.json.work.first %}
-        <div id="work-strings">
-            {% for i in site.json.work %}
-            <span>{{ i | prepend: '"' | append: '",'}}</span>
-            {% endfor %}
-        </div>
-        <p><span class="key">work</span>{% include typed.html %}</p>
-        {% else %}
-        <p><span class="key">work</span><span class="attr">{{ site.json.work }}</span></p>
-        {% endif %}
-        {% else %}
-        <p><span class="key">work</span><span class="attr">{{ site.work }}</span></p>
-        {% endif %}
-    </div>
-
-
-    <div class="block">
-        {% if site.json.hobbies %}
-        {% if site.json.hobbies.first %}
-        <div id="hobbies-strings">
-            {% for i in site.json.hobbies %}
-            <span>{{ i | prepend: '"' | append: '",'}}</span>
-            {% endfor %}
-        </div>
-        <p><span class="key">hobbies</span>{% include typed.html %}</p>
-        {% else %}
-        <p><span class="key">hobbies</span><span class="attr">{{ site.json.hobbies }}</span></p>
-        {% endif %}
-        {% else %}
-        <p><span class="key">hobbies</span><span class="attr">{{ site.hobbies }}</span></p>
-        {% endif %}
-    </div>
-
-
 <!--    <div class="block">-->
 <!--        {% if site.json.cv %}-->
 <!--        {% assign cv = site.json.cv | split: "/" | slice: -1 %}-->
 <!--        <p><span class="key">cv</span><span class="attr"><a href="{{ site.json.cv }}" target="_blank">{{ cv }}</a></span></p>-->
 <!--        {% endif %}-->
 <!--    </div>-->
-<!--    <div class="block">-->
-<!--        {% if site.json.address %}-->
-<!--        {% if site.json.address.first %}-->
-<!--        <p><span class="array-key">address</span></p>-->
-<!--        <div class="array">-->
-<!--            {% for i in site.json.address %}-->
-<!--            <p class="array-attr">{{ i }}</p>-->
-<!--            {% endfor %}-->
-<!--        </div>-->
-<!--        {% else %}-->
-<!--        <p><span class="key">address</span><span class="attr">{{ site.json.address }}</span></p>-->
-<!--        {% endif %}-->
-<!--        {% endif %}-->
-<!--    </div>-->
+    <div class="block">
+        {% if site.json.work %}
+        {% if site.json.work.first %}
+        <p><span class="array-key">work</span></p>
+        <div class="array">
+            {% for i in site.json.work %}
+            <p class="array-attr">{{ i }}</p>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p><span class="key">work</span><span class="attr">{{ site.json.work }}</span></p>
+        {% endif %}
+        {% endif %}
+    </div>
+
+    <div class="block">
+        {% if site.json.hobbies %}
+        {% if site.json.hobbies.first %}
+        <p><span class="array-key">hobbies</span></p>
+        <div class="array">
+            {% for i in site.json.hobbies %}
+            <p class="array-attr">{{ i }}</p>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p><span class="key">hobbies</span><span class="attr">{{ site.json.hobbies }}</span></p>
+        {% endif %}
+        {% endif %}
+    </div>
+
 <!--    <div class="block">-->
 <!--        {% if site.json.contact %}-->
 <!--        {% if site.json.contact.first %}-->
