@@ -7,16 +7,16 @@ show_downloads: false
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-    name: Place Holder
+    name: Vlad Roșca
     description:
         - Hello!
         - This tiny website
         - Looks like json
-    cv: assets/cv.pdf
+    cv: /assets/CV_Vlad_Rosca.pdf
     address:
-        - University of Jekyll
-        - Department of Themes
-        - 123 Main St, Anytown, USA
+        - University Spiru Haret
+        - Department of Informatics and Computer Science
+        - 46G Fabricii Street, Bucharest, Romania
     contact:
         office: Foobar Hall 1.23
         phone: +1 234 567 890
