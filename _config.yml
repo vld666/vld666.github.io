@@ -3,3 +3,42 @@ description: VLD Website description goes here.
 google_analytics:
 theme: jekyll-theme-midnight
 show_downloads: false
+
+# this information is shown on the homepage, all fields are optional and
+# can be declared either as a single string or as a string array/hash
+json:
+    name: Place Holder
+    description:
+        - Hello!
+        - This tiny website
+        - Looks like json
+    cv: assets/cv.pdf
+    address:
+        - University of Jekyll
+        - Department of Themes
+        - 123 Main St, Anytown, USA
+    contact:
+        office: Foobar Hall 1.23
+        phone: +1 234 567 890
+        email: username@domain.com
+#    demo: https://hacked-jekyll.netlify.app
+#    source: https://github.com/piazzai/hacked-jekyll
+    profiles:
+        linkedin: https://www.linkedin.com/in/vlad-roșca/
+        github: https://github.com/vld666
+
+exclude:
+    - LICENSE
+    - README.md
+
+plugins:
+    - jekyll-seo-tag
+    - jekyll-sitemap
+
+whitelist:
+    - jekyll-sitemap
+
+sass:
+    sass_dir: _sass
+    style: compressed
+    sourcemap: never
