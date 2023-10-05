@@ -12,15 +12,22 @@ json:
         - Hello!
         - This tiny website
         - Looks like json
-    cv: /assets/CV_Vlad_Rosca.pdf
-    address:
-        - University Spiru Haret
-        - Department of Informatics and Computer Science
-        - 46G Fabricii Street, Bucharest, Romania
-    contact:
-        office: Foobar Hall 1.23
-        phone: +1 234 567 890
-        email: username@domain.com
+    website: https://vl4d.dev
+    work:
+        - Software Engineer
+        - Freelancer
+    hobbies:
+        - skydiving
+        - krav maga
+        - airsoft
+#    cv: /assets/CV_Vlad_Rosca.pdf
+#    studii:
+#        - Universitatea Spiru Haret
+#        - Facultatea de Inginerie şi Informatică din Bucureşti
+#        - 46G Fabricii Street, Bucharest, Romania
+#    contact:
+#        phone: +1 234 567 890
+#        email: username@domain.com
 #    demo: https://hacked-jekyll.netlify.app
 #    source: https://github.com/piazzai/hacked-jekyll
     profiles:
