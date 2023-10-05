@@ -11,7 +11,7 @@ layout: default
         {% endif %}
         {% if site.json.description %}
         {% if site.json.description.first %}
-        <div class="typed-strings">
+        <div id="description-strings">
             {% for i in site.json.description %}
             <span>{{ i | prepend: '"' | append: '",'}}</span>
             {% endfor %}
@@ -29,7 +29,7 @@ layout: default
     <div class="block">
         {% if site.json.work %}
         {% if site.json.work.first %}
-        <div class="typed-strings">
+        <div id="work-strings">
             {% for i in site.json.work %}
             <span>{{ i | prepend: '"' | append: '",'}}</span>
             {% endfor %}
@@ -47,7 +47,7 @@ layout: default
     <div class="block">
         {% if site.json.hobbies %}
         {% if site.json.hobbies.first %}
-        <div class="typed-strings">
+        <div id="hobbies-strings">
             {% for i in site.json.hobbies %}
             <span>{{ i | prepend: '"' | append: '",'}}</span>
             {% endfor %}
