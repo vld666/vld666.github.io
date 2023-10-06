@@ -11,7 +11,7 @@ json:
     description:
         - Hello!
         - This tiny website
-        - Looks like json
+        - looks like json
     website: https://vl4d.dev
     work:
         - Software Engineer
