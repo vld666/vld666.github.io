@@ -20,8 +20,9 @@ json:
         - skydiving
         - krav maga
         - airsoft
-        - drone pilot
-        - certified ham radio enthusiast
+    licenses:
+        drone pilot: licensed
+        ham radio: YO3DVL
 #    cv: /assets/CV_Vlad_Rosca.pdf
 #    studii:
 #        - Universitatea Spiru Haret

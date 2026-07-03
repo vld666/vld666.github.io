@@ -62,6 +62,17 @@ layout: default
         {% endif %}
     </div>
 
+    <div class="block">
+        {% if site.json.licenses %}
+        <p><span class="list-key">licenses</span></p>
+        <div class="list">
+            {% for i in site.json.licenses %}
+            <p><span class="list-subkey">{{ i | slice: 0 }}</span><span class="list-attr">{{ i | slice: 1 }}</span></p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
 <!--    <div class="block">-->
 <!--        {% if site.json.contact %}-->
 <!--        {% if site.json.contact.first %}-->
